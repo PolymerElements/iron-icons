@@ -2,6 +2,7 @@
   "name": "core-icons",
   "private": true,
   "dependencies": {
+    "core-action-icons": "Polymer/core-action-icons#master",
     "core-icon": "Polymer/core-iconset-svg#master",
     "core-iconset-svg": "Polymer/core-iconset-svg#master",
     "polymer": "Polymer/polymer#master"
