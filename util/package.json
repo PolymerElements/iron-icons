@@ -4,6 +4,6 @@
   "description": "",
   "main": "concat-svg.js",
   "dependencies": {
-    "cheerio": "^0.15.0"
+    "cheerio": "^0.17.0"
   }
 }

@@ -25,23 +25,8 @@ function transmogrify($, name) {
   var node = $('svg');
   // remove spacer rectangles
   node.find('[fill=none]').remove();
-  // remove fill colors
-  node.find('[fill]').each(function() {
-    var e = $(this);
-    var color = e.attr('fill');
-    // some "white" nodes are extraneous
-    if (color === '#FFFFFF') {
-      e.remove();
-    } else {
-      e.removeAttr('fill');
-    }
-  });
-  // remove adobe "save for web" elements
-  node.find('sfw, metadata').remove();
   // remove empty groups
-  var innerHTML = $.xml(node.find('*').filter(':not(g)'));
-  // remove extraneous whitespace
-  innerHTML = innerHTML.replace(/\t|\r|\n/g, '');
+  var innerHTML = $.xml(node.children());
   // add parent group with icon name as id
   var output = '<g id="' + name + '">' + innerHTML + '</g>';
   // print icon svg
