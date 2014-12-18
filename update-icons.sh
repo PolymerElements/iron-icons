@@ -19,7 +19,7 @@ bootstrap() {
   pushd ${ICONSRC}
   git init
   git config core.sparsecheckout true
-  echo "*/svg/*_24px.svg" >> .git/info/sparse-checkout
+  echo "*/svg/production/*_24px.svg" >> .git/info/sparse-checkout
   git remote add -f origin ${ORIGIN}
   popd
 }
