@@ -37,7 +37,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../core-icon/core-icon.html">
 <link rel="import" href="../core-iconset-svg/core-iconset-svg.html">
-<core-iconset-svg id="$2" iconSize="24">
+<core-iconset-svg name="$2" size="24">
 <svg><defs>
 ENDL
 }
@@ -103,7 +103,7 @@ See [core-iconset](#core-iconset) and [core-iconset-svg](#core-iconset-svg) for 
 -->
 <link rel="import" href="../core-icon/core-icon.html">
 <link rel="import" href="../core-iconset-svg/core-iconset-svg.html">
-<core-iconset-svg id="icons" iconSize="24">
+<core-iconset-svg name="icons" size="24">
 <svg><defs>
 ENDL
 
