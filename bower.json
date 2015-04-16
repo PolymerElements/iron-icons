@@ -1,10 +1,10 @@
 {
-  "name": "core-icons",
+  "name": "iron-icons",
   "private": true,
   "dependencies": {
-    "core-icon": "Polymer/core-icon#0.8-preview",
-    "core-iconset-svg": "Polymer/core-iconset-svg#0.8-preview",
-    "polymer": "Polymer/polymer#0.8-preview"
+    "iron-icon": "polymerelements/iron-icon#^0.8.0",
+    "iron-iconset-svg": "polymerelements/iron-iconset-svg#^0.8.0",
+    "polymer": "polymer/polymer#v0.8.0-rc.4"
   },
   "ignore": [
     "util",

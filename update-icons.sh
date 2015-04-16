@@ -35,9 +35,9 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 
-<link rel="import" href="../core-icon/core-icon.html">
-<link rel="import" href="../core-iconset-svg/core-iconset-svg.html">
-<core-iconset-svg name="$2" size="24">
+<link rel="import" href="../iron-icon/iron-icon.html">
+<link rel="import" href="../iron-iconset-svg/iron-iconset-svg.html">
+<iron-iconset-svg name="$2" size="24">
 <svg><defs>
 ENDL
 }
@@ -45,7 +45,7 @@ ENDL
 footer(){
 cat >> $1 <<ENDL
 </defs></svg>
-</core-iconset-svg>
+</iron-iconset-svg>
 ENDL
 }
 
@@ -64,9 +64,9 @@ local folder="$1"
 local default=(action alert content file navigation toggle)
 
 local name="icons"
-local file="../core-icons.html"
+local file="../iron-icons.html"
 
-# special docs header for core-icons.html
+# special docs header for iron-icons.html
 cat > $file <<'ENDL'
 <!--
 Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
@@ -78,32 +78,32 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 <!--
 
-`core-icons` is a utitliy import that includes the definition for the `core-icon` element, `core-iconset-svg` element, as well as an import for the default icon set.
+`iron-icons` is a utitliy import that includes the definition for the `iron-icon` element, `iron-iconset-svg` element, as well as an import for the default icon set.
 
-The `core-icons` directory also includes imports for additional icon sets that can be loaded into your project.
+The `iron-icons` directory also includes imports for additional icon sets that can be loaded into your project.
 
 Example loading icon set:
 
-    <link rel="import" href="../core-icons/maps-icons.html">
+    <link rel="import" href="../iron-icons/maps-icons.html">
 
-To use an icon from one of these sets, first prefix your `core-icon` with the icon set name, followed by a colon, ":", and then the icon id.
+To use an icon from one of these sets, first prefix your `iron-icon` with the icon set name, followed by a colon, ":", and then the icon id.
 
 Example using the directions-bus icon from the maps icon set:
 
-    <core-icon icon="maps:directions-bus"></core-icon>
+    <iron-icon icon="maps:directions-bus"></iron-icon>
 
 
-See [core-icon](#core-icon) for more information about working with icons.
+See [iron-icon](#iron-icon) for more information about working with icons.
 
-See [core-iconset](#core-iconset) and [core-iconset-svg](#core-iconset-svg) for more information about how to create a custom iconset.
+See [iron-iconset](#iron-iconset) and [iron-iconset-svg](#iron-iconset-svg) for more information about how to create a custom iconset.
 
 @group Polymer Core Elements
-@element core-icons
+@element iron-icons
 @homepage polymer.github.io
 -->
-<link rel="import" href="../core-icon/core-icon.html">
-<link rel="import" href="../core-iconset-svg/core-iconset-svg.html">
-<core-iconset-svg name="icons" size="24">
+<link rel="import" href="../iron-icon/iron-icon.html">
+<link rel="import" href="../iron-iconset-svg/iron-iconset-svg.html">
+<iron-iconset-svg name="icons" size="24">
 <svg><defs>
 ENDL
 
