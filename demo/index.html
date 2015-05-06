@@ -89,17 +89,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 </head>
 <body>
 
-  <template is="x-autobind">
+  <template is="dom-bind">
 
    <iron-meta type="iconset" list="{{iconsets}}"></iron-meta>
 
-    <template is="x-repeat" items="{{iconsets}}">
+    <template is="dom-repeat" items="{{iconsets}}">
 
       <h2>{{item.name}}</h2>
 
       <div class="set horizontal wrap layout">
 
-        <template is="x-repeat" items="{{item.iconNames}}">
+        <template is="dom-repeat" items="{{item.iconNames}}">
 
           <span class="container vertical center layout">
             <iron-icon icon="{{item}}"></iron-icon>
