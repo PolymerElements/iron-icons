@@ -23,7 +23,7 @@
     "iron-iconset-svg": "polymerelements/iron-iconset-svg#^0.9.0"
   },
   "devDependencies": {
-    "paper-styles": "polymerelements/paper-styles#^0.9.0",
+    "iron-flex-layout": "polymerelements/iron-flex-layout#^0.9.0",
     "iron-meta": "polymerelements/iron-meta#^0.9.0",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.6.0"
   },
