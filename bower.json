@@ -7,8 +7,8 @@
   ],
   "keywords": [
     "web-components",
-    "web-component",
-    "polymer"
+    "polymer",
+    "icon"
   ],
   "main": "iron-icons.html",
   "private": true,
