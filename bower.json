@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git://github.com/PolymerElements/paper-icons"
   },
-  "license": "MIT",
+  "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/PolymerElements/paper-icons",
   "dependencies": {
     "iron-icon": "polymerelements/iron-icon#^0.9.0",
