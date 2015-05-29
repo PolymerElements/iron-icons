@@ -24,6 +24,7 @@
     "polymer": "Polymer/polymer#^1.0.0"
   },
   "devDependencies": {
+    "paper-styles": "polymerelements/paper-styles#^1.0.2",
     "iron-component-page": "polymerelements/iron-component-page#1.0.0",
     "iron-flex-layout": "polymerelements/iron-flex-layout#^1.0.0",
     "iron-meta": "polymerelements/iron-meta#^1.0.0",
