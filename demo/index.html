@@ -105,7 +105,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       <div class="set horizontal wrap layout">
 
-        <template is="dom-repeat" items="{{item.iconNames}}">
+        <template is="dom-repeat" items="{{getIconNames(item)}}">
 
           <span class="container vertical center layout">
             <iron-icon icon="{{item}}"></iron-icon>
@@ -119,6 +119,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </template>
 
   </template>
+
+  <script>
+
+    document.querySelector('[is=dom-bind]').getIconNames = function(iconset) {
+      return iconset.getIconNames();
+    };
+
+  </script>
 
 </body>
 </html>
