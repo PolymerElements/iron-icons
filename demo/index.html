@@ -80,7 +80,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .container {
       min-width: 10em;
       padding: 1em 0.5em;
-      white-space: nowrap;
+      text-align: center;
     }
 
     .container > div {
@@ -107,7 +107,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <template is="dom-repeat" items="{{item.iconNames}}">
 
-          <span class="container vertical center layout">
+          <span class="container vertical center layout flex-1">
             <iron-icon icon="{{item}}"></iron-icon>
             <div>{{item}}</div>
           </span>
