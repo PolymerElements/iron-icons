@@ -2,7 +2,7 @@
 <!---
 
 This README is automatically generated from the comments in these files:
-iron-icons.html
+av-icons.html  communication-icons.html  device-icons.html  editor-icons.html  hardware-icons.html  image-icons.html  iron-icons.html  maps-icons.html  notification-icons.html  social-icons.html
 
 Edit those files, and our readme bot will duplicate them over here!
 Edit this file, and the bot will squash your changes :)
