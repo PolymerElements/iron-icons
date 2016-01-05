@@ -25,6 +25,10 @@ function transmogrify($, name) {
   var node = $('svg');
   // remove spacer rectangles
   node.find('[fill=none]').remove();
+  // remove fill attribute
+  node.find('[fill]').each(function(i, e) {
+    $(e).attr('fill', null);
+  });
   // remove empty groups
   var innerHTML = $.xml(node.children());
   // add parent group with icon name as id
