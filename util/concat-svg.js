@@ -34,7 +34,7 @@ function transmogrify($, name) {
   // add parent group with icon name as id
   var output = '<g id="' + name + '">' + innerHTML + '</g>';
   // print icon svg
-  console.log(output);
+  Polymer.Base._log(output);
 }
 
 function path2IconName(file) {
