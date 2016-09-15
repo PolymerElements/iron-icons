@@ -24,7 +24,7 @@
     "polymer": "Polymer/polymer#2.0-preview"
   },
   "devDependencies": {
-    "paper-styles": "polymerelements/paper-styles#^1.0.2",
+    "paper-styles": "PolymerElements/paper-styles#2.0-preview",
     "iron-component-page": "polymerelements/iron-component-page#1.0.0",
     "iron-flex-layout": "PolymerElements/iron-flex-layout#2.0-preview",
     "iron-meta": "PolymerElements/iron-meta#2.0-preview",
@@ -41,6 +41,7 @@
     "iron-iconset-svg": "2.0-preview",
     "iron-flex-layout": "2.0-preview",
     "webcomponentsjs": "v1",
-    "polymer": "2.0-preview"
+    "polymer": "2.0-preview",
+    "paper-styles": "2.0-preview"
   }
 }
