@@ -31,7 +31,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <link rel="import" href="../notification-icons.html">
   <link rel="import" href="../social-icons.html">
   <link rel="import" href="../places-icons.html">
-
+</head>
+<body>
   <custom-style>
     <style is="custom-style">
       h2 {
@@ -53,6 +54,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         border-bottom: 1px solid silver;
         @apply --layout-horizontal;
         @apply --layout-wrap;
+        @apply --layout-center-justified;
       }
 
       .set:last-of-type {
@@ -76,12 +78,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       .container {
-        min-width: 10em;
-        padding: 1em 0.5em;
+        width: 10em;
+        margin: 1em 0.5em;
         text-align: center;
+        @apply --layout-flex;
         @apply --layout-vertical;
         @apply --layout-center;
-        @apply --layout-flex;
+        flex-basis: auto;
       }
 
       .container > div {
@@ -93,41 +96,38 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </custom-style>
 
   <script>
-    window.addEventListener('load', function() {
-      document.querySelector('dom-bind').getIconNames = function(iconset) {
-        return iconset.getIconNames();
-      };
+    window.addEventListener('WebComponentsReady', function() {
+      var iconsets = new Polymer.IronMeta({type: 'iconset'}).list;
 
-      // `list` is only available as a getter on `<iron-meta>` elements, not
-      // IronMeta instances. All iconsets have loaded by this point - given that
-      // they're in imports above, so the 'load' event should be late enough to
-      // get them.
+      iconsets.forEach(function(iconset) {
+        var fragment = document.createDocumentFragment();
 
-      var meta = document.createElement('iron-meta');
-      meta.type = 'iconset';
-      document.querySelector('dom-bind').iconsets = meta.list;
+        var title = document.createElement('h2');
+        title.textContent = iconset.name;
+        fragment.appendChild(title);
+
+        var set = document.createElement('div');
+        set.classList.add('set');
+        fragment.appendChild(set);
+
+        iconset.getIconNames().forEach(function(name) {
+          var container = document.createElement('span');
+          container.classList.add('container');
+
+          var icon = document.createElement('iron-icon');
+          icon.icon = name;
+          container.appendChild(icon);
+
+          var text = document.createElement('div');
+          text.textContent = name;
+          container.appendChild(text);
+
+          set.appendChild(container);
+        });
+
+        document.body.appendChild(fragment);
+      });
     });
   </script>
-</head>
-<body>
-  <dom-bind>
-    <template>
-      <dom-repeat items="{{iconsets}}">
-        <template>
-          <h2>{{item.name}}</h2>
-          <div class="set">
-            <dom-repeat is="dom-repeat" items="{{getIconNames(item)}}">
-              <template>
-                <span class="container">
-                  <iron-icon icon="{{item}}"></iron-icon>
-                  <div>{{item}}</div>
-                </span>
-              </template>
-            </dom-repeat>
-          </div>
-        </template>
-      </dom-repeat>
-    </template>
-  </dom-bind>
 </body>
 </html>
