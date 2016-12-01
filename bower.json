@@ -34,10 +34,17 @@
   "variants": {
     "1.x": {
       "dependencies": {
+        "iron-icon": "polymerelements/iron-icon#^1.0.0",
+        "iron-iconset-svg": "polymerelements/iron-iconset-svg#^1.0.0",
         "polymer": "Polymer/polymer#^1.0.0"
       },
       "devDependencies": {
-        "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+        "paper-styles": "polymerelements/paper-styles#^1.0.2",
+        "iron-component-page": "polymerelements/iron-component-page#1.0.0",
+        "iron-flex-layout": "polymerelements/iron-flex-layout#^1.0.0",
+        "iron-meta": "polymerelements/iron-meta#^1.0.0",
+        "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
+        "web-component-tester": "^4.0.0"
       }
     }
   },
