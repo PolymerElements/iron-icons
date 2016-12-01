@@ -25,11 +25,21 @@
   },
   "devDependencies": {
     "paper-styles": "PolymerElements/paper-styles#2.0-preview",
-    "iron-component-page": "polymerelements/iron-component-page#1.0.0",
+    "iron-component-page": "polymerelements/iron-component-page#2.0-preview",
     "iron-flex-layout": "PolymerElements/iron-flex-layout#2.0-preview",
     "iron-meta": "PolymerElements/iron-meta#2.0-preview",
     "webcomponentsjs": "webcomponents/webcomponentsjs#v1",
     "web-component-tester": "^4.0.0"
+  },
+  "variants": {
+    "1.x": {
+      "dependencies": {
+        "polymer": "Polymer/polymer#^1.0.0"
+      },
+      "devDependencies": {
+        "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+      }
+    }
   },
   "ignore": [
     "util",
