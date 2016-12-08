@@ -53,12 +53,7 @@
     "update-icons.sh"
   ],
   "resolutions": {
-    "iron-icon": "2.0-preview",
-    "iron-meta": "2.0-preview",
-    "iron-iconset-svg": "2.0-preview",
-    "iron-flex-layout": "2.0-preview",
     "webcomponentsjs": "v1",
-    "polymer": "2.0-preview",
-    "paper-styles": "2.0-preview"
+    "polymer": "2.0-preview"
   }
 }
