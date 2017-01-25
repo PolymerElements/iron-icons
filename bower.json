@@ -29,7 +29,7 @@
     "iron-flex-layout": "PolymerElements/iron-flex-layout#2.0-preview",
     "iron-meta": "PolymerElements/iron-meta#2.0-preview",
     "webcomponentsjs": "webcomponents/webcomponentsjs#v1",
-    "web-component-tester": "^4.0.0"
+    "web-component-tester": "v6.0.0-prerelease.5"
   },
   "variants": {
     "1.x": {
