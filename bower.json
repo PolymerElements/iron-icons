@@ -28,8 +28,8 @@
     "iron-component-page": "polymerelements/iron-component-page#2.0-preview",
     "iron-flex-layout": "PolymerElements/iron-flex-layout#2.0-preview",
     "iron-meta": "PolymerElements/iron-meta#2.0-preview",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#v1",
-    "web-component-tester": "v6.0.0-prerelease.5"
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0-rc.1",
+    "web-component-tester": "^6.0.0-prerelease.6"
   },
   "variants": {
     "1.x": {
@@ -51,9 +51,5 @@
   "ignore": [
     "util",
     "update-icons.sh"
-  ],
-  "resolutions": {
-    "webcomponentsjs": "v1",
-    "polymer": "2.0-preview"
-  }
+  ]
 }
