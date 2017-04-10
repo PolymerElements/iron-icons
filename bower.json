@@ -26,7 +26,6 @@
   "devDependencies": {
     "paper-styles": "PolymerElements/paper-styles#2.0-preview",
     "iron-component-page": "polymerelements/iron-component-page#2.0-preview",
-    "iron-flex-layout": "PolymerElements/iron-flex-layout#2.0-preview",
     "iron-meta": "PolymerElements/iron-meta#2.0-preview",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0-rc.1",
     "web-component-tester": "^6.0.0-prerelease.6"
@@ -41,7 +40,6 @@
       "devDependencies": {
         "paper-styles": "polymerelements/paper-styles#^1.0.2",
         "iron-component-page": "polymerelements/iron-component-page#1.0.0",
-        "iron-flex-layout": "polymerelements/iron-flex-layout#^1.0.0",
         "iron-meta": "polymerelements/iron-meta#^1.0.0",
         "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
         "web-component-tester": "^4.0.0"
