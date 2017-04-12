@@ -110,10 +110,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <script>
     window.addEventListener('WebComponentsReady', function() {
-      scope.getIconNames =
-      scope.parentNode.getIconNames = function(iconset) {
+      scope.getIconNames = function(iconset) {
         return iconset.getIconNames();
       };
+      scope.parentNode.getIconNames = scope.getIconNames;
       iconsetRepeat.items = new Polymer.IronMeta({type: 'iconset'}).list;
     });
   </script>
