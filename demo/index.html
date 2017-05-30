@@ -14,7 +14,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
   <link rel="import" href="../../paper-styles/demo-pages.html">
   <link rel="import" href="../../paper-styles/color.html">
-  <link rel="import" href="../../iron-flex-layout/iron-flex-layout.html">
   <link rel="import" href="../../iron-meta/iron-meta.html">
 
   <!-- load default iconset -->
@@ -49,12 +48,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       .set {
+        display: block;
+        text-align: center;
         margin: auto;
         padding: 1em 0;
         border-bottom: 1px solid silver;
-        @apply --layout-horizontal;
-        @apply --layout-wrap;
-        @apply --layout-center-justified;
       }
 
       .set:last-of-type {
@@ -74,17 +72,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       .set:nth-of-type(4n) {
-        color: var( --google-blue-500);
+        color: var(--google-blue-500);
       }
 
       .container {
+        display: inline-block;
         width: 10em;
         margin: 1em 0.5em;
         text-align: center;
-        @apply --layout-flex;
-        @apply --layout-vertical;
-        @apply --layout-center;
-        flex-basis: auto;
       }
 
       .container > div {
@@ -95,38 +90,31 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
   </custom-style>
 
+  <dom-bind>
+    <template is="dom-bind" id="scope">
+      <dom-repeat>
+        <template is="dom-repeat" id="iconsetRepeat">
+          <h2>{{item.name}}</h2>
+          <dom-repeat class="set">
+            <template is="dom-repeat" items="{{getIconNames(item)}}">
+              <span class="container">
+                <iron-icon icon="{{item}}"></iron-icon>
+                <div>{{item}}</div>
+              </span>
+            </template>
+          </dom-repeat>
+        </template>
+      </dom-repeat>
+    </template>
+  </dom-bind>
+
   <script>
     window.addEventListener('WebComponentsReady', function() {
-      var iconsets = new Polymer.IronMeta({type: 'iconset'}).list;
-
-      iconsets.forEach(function(iconset) {
-        var fragment = document.createDocumentFragment();
-
-        var title = document.createElement('h2');
-        title.textContent = iconset.name;
-        fragment.appendChild(title);
-
-        var set = document.createElement('div');
-        set.classList.add('set');
-        fragment.appendChild(set);
-
-        iconset.getIconNames().forEach(function(name) {
-          var container = document.createElement('span');
-          container.classList.add('container');
-
-          var icon = document.createElement('iron-icon');
-          icon.icon = name;
-          container.appendChild(icon);
-
-          var text = document.createElement('div');
-          text.textContent = name;
-          container.appendChild(text);
-
-          set.appendChild(container);
-        });
-
-        document.body.appendChild(fragment);
-      });
+      scope.getIconNames = function(iconset) {
+        return iconset.getIconNames();
+      };
+      scope.parentNode.getIconNames = scope.getIconNames;
+      iconsetRepeat.items = new Polymer.IronMeta({type: 'iconset'}).list;
     });
   </script>
 </body>
