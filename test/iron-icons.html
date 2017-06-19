@@ -45,7 +45,8 @@ suite('<iron-icons>', function() {
     ];
 
     setup(function() {
-      meta = Polymer.Base.create('iron-meta', {type: 'iconset'});
+      meta = document.createElement('iron-meta');
+      meta.type = 'iconset';
     });
 
     test('all uniquely named', function() {
