@@ -28,6 +28,6 @@ use the [poly-icon](https://poly-icon.appspot.com/) tool. It allows you
 to select individual icons, and creates an iconset from them that you can
 use directly in your elements.
 
-See [iron-icon](./iron-icon) for more information about working with icons.
+See [iron-icon](https://github.com/PolymerElements/iron-icon) for more information about working with icons.
 
-See [iron-iconset](./iron-iconset) and [iron-iconset-svg](./iron-iconset-svg) for more information about how to create a custom iconset.
+See [iron-iconset](https://github.com/PolymerElements/iron-iconset) and [iron-iconset-svg](https://github.com/PolymerElements/iron-iconset-svg) for more information about how to create a custom iconset.
