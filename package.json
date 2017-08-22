@@ -1,0 +1,27 @@
+{
+  "name": "@polymer/iron-icons",
+  "flat": true,
+  "version": "3.0.0-pre.1",
+  "description": "A set of icons for use with iron-icon",
+  "contributors": [
+    "The Polymer Authors"
+  ],
+  "keywords": [
+    "web-components",
+    "polymer",
+    "icon"
+  ],
+  "main": "iron-icons.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PolymerElements/iron-icons"
+  },
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/PolymerElements/paper-icons",
+  "dependencies": {
+    "@polymer/iron-icon": "^3.0.0-pre.1",
+    "@polymer/iron-iconset-svg": "^3.0.0-pre.1",
+    "@polymer/polymer": "^3.0.0-pre.1"
+  },
+  "devDependencies": {}
+}
