@@ -1,0 +1,10 @@
+{
+  "name": "@polymer/iron-icons",
+  "private": true,
+  "description": "A set of icons for use with iron-icon",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PolymerElements/iron-icons"
+  },
+  "license": "BSD-3-Clause"
+}
