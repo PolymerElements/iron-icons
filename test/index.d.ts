@@ -5,6 +5,8 @@
  *   https://github.com/Polymer/gen-typescript-declarations
  *
  * To modify these typings, edit the source file(s):
- *   util/concat-svg.js
+ *   test/index.html
  */
+
+/// <reference path="../../web-component-tester/browser.d.ts" />
 
