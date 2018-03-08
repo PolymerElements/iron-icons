@@ -9,6 +9,7 @@
  */
 
 /// <reference path="../iron-icon/iron-icon.d.ts" />
+/// <reference path="../iron-iconset-svg/iron-iconset-svg.d.ts" />
 
 /**
  * `iron-icons` is a utility import that includes the definition for the `iron-icon` element, `iron-iconset-svg` element, as well as an import for the default icon set.

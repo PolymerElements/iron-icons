@@ -9,4 +9,5 @@
  */
 
 /// <reference path="../iron-icon/iron-icon.d.ts" />
+/// <reference path="../iron-iconset-svg/iron-iconset-svg.d.ts" />
 
