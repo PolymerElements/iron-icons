@@ -10,7 +10,7 @@
     "polymer",
     "icon"
   ],
-  "main": "iron-icons.html",
+  "main": ["iron-icons.html", "av-icons.html"],
   "private": true,
   "repository": {
     "type": "git",
