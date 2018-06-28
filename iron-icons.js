@@ -322,23 +322,28 @@ document.head.appendChild($_documentContainer.content);
 /**
 @license
 Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+This code may only be used under the BSD style license found at
+http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
+http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
+found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
+part of the polymer project is also subject to an additional IP rights grant
+found at http://polymer.github.io/PATENTS.txt
 */
 /**
 
-`iron-icons` is a utility import that includes the definition for the `iron-icon` element, `iron-iconset-svg` element, as well as an import for the default icon set.
+`iron-icons` is a utility import that includes the definition for the
+`iron-icon` element, `iron-iconset-svg` element, as well as an import for the
+default icon set.
 
-The `iron-icons` directory also includes imports for additional icon sets that can be loaded into your project.
+The `iron-icons` directory also includes imports for additional icon sets that
+can be loaded into your project.
 
 Example loading icon set:
 
     <link rel="import" href="../iron-icons/maps-icons.html">
 
-To use an icon from one of these sets, first prefix your `iron-icon` with the icon set name, followed by a colon, ":", and then the icon id.
+To use an icon from one of these sets, first prefix your `iron-icon` with the
+icon set name, followed by a colon, ":", and then the icon id.
 
 Example using the directions-bus icon from the maps icon set:
 
@@ -351,7 +356,8 @@ Example using the directions-bus icon from the maps icon set:
 
 See [iron-icon](#iron-icon) for more information about working with icons.
 
-See [iron-iconset](#iron-iconset) and [iron-iconset-svg](#iron-iconset-svg) for more information about how to create a custom iconset.
+See [iron-iconset](#iron-iconset) and [iron-iconset-svg](#iron-iconset-svg) for
+more information about how to create a custom iconset.
 
 @group Iron Elements
 @pseudoElement iron-icons

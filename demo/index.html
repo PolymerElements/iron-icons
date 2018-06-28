@@ -107,25 +107,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </dom-bind>
 
   <script type="module">
-import '@polymer/paper-styles/demo-pages.js';
-import '@polymer/paper-styles/color.js';
-import { IronMeta } from '@polymer/iron-meta/iron-meta.js';
-import '../iron-icons.js';
-import '../av-icons.js';
-import '../communication-icons.js';
-import '../device-icons.js';
-import '../editor-icons.js';
-import '../hardware-icons.js';
-import '../image-icons.js';
-import '../maps-icons.js';
-import '../notification-icons.js';
-import '../social-icons.js';
-import '../places-icons.js';
-scope.getIconNames = function(iconset) {
-  return iconset.getIconNames();
-};
-scope.parentNode.getIconNames = scope.getIconNames;
-iconsetRepeat.items = new IronMeta({type: 'iconset'}).list;
-</script>
+    import '@polymer/paper-styles/demo-pages.js';
+    import '@polymer/paper-styles/color.js';
+    import '../iron-icons.js';
+    import '../av-icons.js';
+    import '../communication-icons.js';
+    import '../device-icons.js';
+    import '../editor-icons.js';
+    import '../hardware-icons.js';
+    import '../image-icons.js';
+    import '../maps-icons.js';
+    import '../notification-icons.js';
+    import '../social-icons.js';
+    import '../places-icons.js';
+
+    import {IronMeta} from '@polymer/iron-meta/iron-meta.js';
+
+    scope.getIconNames = function(iconset) {
+      return iconset.getIconNames();
+    };
+    scope.parentNode.getIconNames = scope.getIconNames;
+    iconsetRepeat.items = new IronMeta({type: 'iconset'}).list;
+  </script>
 </body>
 </html>
