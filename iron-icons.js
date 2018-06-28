@@ -1,5 +1,51 @@
+/**
+@license
+Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at
+http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
+http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
+found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
+part of the polymer project is also subject to an additional IP rights grant
+found at http://polymer.github.io/PATENTS.txt
+*/
 import '@polymer/iron-icon/iron-icon.js';
 import '@polymer/iron-iconset-svg/iron-iconset-svg.js';
+
+/**
+
+`iron-icons` is a utility import that includes the definition for the
+`iron-icon` element, `iron-iconset-svg` element, as well as an import for the
+default icon set.
+
+The `iron-icons` directory also includes imports for additional icon sets that
+can be loaded into your project.
+
+Example loading icon set:
+
+    <link rel="import" href="../iron-icons/maps-icons.html">
+
+To use an icon from one of these sets, first prefix your `iron-icon` with the
+icon set name, followed by a colon, ":", and then the icon id.
+
+Example using the directions-bus icon from the maps icon set:
+
+    <iron-icon icon="maps:directions-bus"></iron-icon>
+
+    To load a subset of icons from one of the default `iron-icons` sets, you can
+    use the [poly-icon](https://poly-icon.appspot.com/) tool. It allows you
+    to select individual icons, and creates an iconset from them that you can
+    use directly in your elements.
+
+See [iron-icon](#iron-icon) for more information about working with icons.
+
+See [iron-iconset](#iron-iconset) and [iron-iconset-svg](#iron-iconset-svg) for
+more information about how to create a custom iconset.
+
+@group Iron Elements
+@pseudoElement iron-icons
+@demo demo/index.html
+*/
+
 const $_documentContainer = document.createElement('template');
 $_documentContainer.setAttribute('style', 'display: none;');
 
@@ -318,54 +364,3 @@ $_documentContainer.innerHTML = `<iron-iconset-svg name="icons" size="24">
 </iron-iconset-svg>`;
 
 document.head.appendChild($_documentContainer.content);
-
-/**
-@license
-Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at
-http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
-http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
-found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
-part of the polymer project is also subject to an additional IP rights grant
-found at http://polymer.github.io/PATENTS.txt
-*/
-/**
-
-`iron-icons` is a utility import that includes the definition for the
-`iron-icon` element, `iron-iconset-svg` element, as well as an import for the
-default icon set.
-
-The `iron-icons` directory also includes imports for additional icon sets that
-can be loaded into your project.
-
-Example loading icon set:
-
-    <link rel="import" href="../iron-icons/maps-icons.html">
-
-To use an icon from one of these sets, first prefix your `iron-icon` with the
-icon set name, followed by a colon, ":", and then the icon id.
-
-Example using the directions-bus icon from the maps icon set:
-
-    <iron-icon icon="maps:directions-bus"></iron-icon>
-
-    To load a subset of icons from one of the default `iron-icons` sets, you can
-    use the [poly-icon](https://poly-icon.appspot.com/) tool. It allows you
-    to select individual icons, and creates an iconset from them that you can
-    use directly in your elements.
-
-See [iron-icon](#iron-icon) for more information about working with icons.
-
-See [iron-iconset](#iron-iconset) and [iron-iconset-svg](#iron-iconset-svg) for
-more information about how to create a custom iconset.
-
-@group Iron Elements
-@pseudoElement iron-icons
-@demo demo/index.html
-*/
-/*
-  FIXME(polymer-modulizer): the above comments were extracted
-  from HTML and may be out of place here. Review them and
-  then delete this comment!
-*/
-;
