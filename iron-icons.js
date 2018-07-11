@@ -22,7 +22,9 @@ can be loaded into your project.
 
 Example loading icon set:
 
-    <link rel="import" href="../iron-icons/maps-icons.html">
+    <script type="module">
+      import '@polymer/iron-icons/maps-icons.js';
+    </script>
 
 To use an icon from one of these sets, first prefix your `iron-icon` with the
 icon set name, followed by a colon, ":", and then the icon id.
@@ -31,15 +33,13 @@ Example using the directions-bus icon from the maps icon set:
 
     <iron-icon icon="maps:directions-bus"></iron-icon>
 
-    To load a subset of icons from one of the default `iron-icons` sets, you can
-    use the [poly-icon](https://poly-icon.appspot.com/) tool. It allows you
-    to select individual icons, and creates an iconset from them that you can
-    use directly in your elements.
+See [iron-icon](https://www.webcomponents.org/element/@polymer/iron-icon) for
+more information about working with icons.
 
-See [iron-icon](#iron-icon) for more information about working with icons.
-
-See [iron-iconset](#iron-iconset) and [iron-iconset-svg](#iron-iconset-svg) for
-more information about how to create a custom iconset.
+See [iron-iconset](https://www.webcomponents.org/element/@polymer/iron-iconset)
+and
+[iron-iconset-svg](https://www.webcomponents.org/element/@polymer/iron-iconset-svg)
+for more information about how to create a custom iconset.
 
 @group Iron Elements
 @pseudoElement iron-icons
