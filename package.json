@@ -13,8 +13,8 @@
   "name": "@polymer/iron-icons",
   "license": "BSD-3-Clause",
   "devDependencies": {
-    "@polymer/iron-meta": "^3.0.0-pre.24",
-    "@polymer/paper-styles": "^3.0.0-pre.24",
+    "@polymer/iron-meta": "^3.0.0-pre.25",
+    "@polymer/paper-styles": "^3.0.0-pre.25",
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "wct-browser-legacy": "^1.0.1",
     "webmat": "^0.2.2",
@@ -29,8 +29,8 @@
   "author": "The Polymer Authors",
   "main": "iron-icons.js",
   "dependencies": {
-    "@polymer/iron-icon": "^3.0.0-pre.24",
-    "@polymer/iron-iconset-svg": "^3.0.0-pre.24",
+    "@polymer/iron-icon": "^3.0.0-pre.25",
+    "@polymer/iron-iconset-svg": "^3.0.0-pre.25",
     "@polymer/polymer": "^3.0.0"
   }
 }
