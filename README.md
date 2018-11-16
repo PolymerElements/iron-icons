@@ -25,8 +25,8 @@ npm install --save @polymer/iron-icons
 <html>
   <head>
     <script type="module">
-      import '@polymer/iron-icon/iron-icon.js';
       import '@polymer/iron-icons/iron-icons.js';
+      import '@polymer/iron-icon/iron-icon.js';
     </script>
   </head>
   <body>
@@ -41,8 +41,8 @@ npm install --save @polymer/iron-icons
 import {PolymerElement} from '@polymer/polymer/polymer-element.js';
 import {html} from '@polymer/polymer/lib/utils/html-tag.js';
 
-import '@polymer/iron-icon/iron-icon.js';
 import '@polymer/iron-icons/iron-icons.js';
+import '@polymer/iron-icon/iron-icon.js';
 
 class ExampleElement extends PolymerElement {
   static get template() {
