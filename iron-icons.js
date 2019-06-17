@@ -43,7 +43,6 @@ and
 [iron-iconset-svg](https://www.webcomponents.org/element/@polymer/iron-iconset-svg)
 for more information about how to create a custom iconset.
 
-@group Iron Elements
 @pseudoElement iron-icons
 @demo demo/index.html
 */
